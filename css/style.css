@@ -18,14 +18,17 @@ a:focus, a:active {
 nav, footer, header, aside {
   display: block;
 }
-html, body {
+html{
+  font-size: 14px;
+}
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
   color: white;
-  background-color: black;
-  font-size: 14px;
+  background-color: #231F20;
+  font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -44,6 +47,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 a, a:visited {
+  color:white;
   text-decoration: none;
 }
 a:hover {
@@ -80,4 +84,61 @@ h1, h2, h3, h4, h5, h6 {
 .col-m-4 {width: 66.64%;}
 .col-m-5 {width: 83.3%;}
 .col-m-6 {width: 100%;}
+/*First slide*/
+.container {
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 37px;
+}
+.container__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu__content {
+  display: flex;
+  justify-content: space-between;
+  font-display: row;
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.14rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  align-items: center;
+  text-align: center;
+}
+.buttom {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu__button {
+  border: 1px solid white;
+  font-style: 1.21rem;
+  padding: 1.4rem 2rem;
+  background-color:#231F20;
+  color: white;
+}
+.menu_ImageTag {
+  max-width: 100%;
+  height: 100%;
+}
+.text {
+  height: 400px;
+  margin: 0 auto;
+}
+.text__header {
+  font-weight: 500;
+  font-size: 5.71rem;
+  line-height: 6.28rem;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.text__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
