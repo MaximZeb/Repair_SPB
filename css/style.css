@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 .col-m-5 {width: 83.3%;}
 .col-m-6 {width: 100%;}
 /*First slide*/
-.container {
+.container .feutures{
   max-width: 1000px;
   padding: 10px;
   margin: 0 auto;
@@ -123,9 +123,10 @@ h1, h2, h3, h4, h5, h6 {
 .menu__button {
   border: 1px solid white;
   font-style: 1.21rem;
-  padding: 1.4rem 2rem;
+  padding: 1.4rem 2.2rem;
   background-color:#231F20;
   color: white;
+  overflow: none;
 }
 .menu__button:hover {
   background-color:#4452FE;;
@@ -170,4 +171,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu__buttom__button {
  margin: 0 1.25rem; 
+}
+.fon {
+  margin-top: 35px;
+
+}
+.fon__image {
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 66.15%);
+}
+.feutures__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
