@@ -22,6 +22,7 @@ html{
   font-size: 14px;
 }
 body {
+  text-align: center;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -84,8 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 .col-m-4 {width: 66.64%;}
 .col-m-5 {width: 83.3%;}
 .col-m-6 {width: 100%;}
-/*First slide*/
-.container .feutures{
+/*First slide, slide feutures, Contents*/
+.container, .feutures, .Contents{
   max-width: 1000px;
   padding: 10px;
   margin: 0 auto;
@@ -132,32 +133,36 @@ h1, h2, h3, h4, h5, h6 {
   background-color:#4452FE;;
   border: none;
 }
-.menu_ImageTag {
+.menu_ImageTag, .feutures__Image, .feutures__icon, .fon__image {
   max-width: 100%;
   height: 100%;
+}
+.menu__link {
+  border-bottom:none;
+}
+.menu__link:hover {
+  border-bottom: 1px solid white;
 }
 .container__content > .text {
   height: 100%;
   margin: 0 auto;
   margin-top: 6.07rem;
-
 }
 .text__header {
   font-weight: 500;
   font-size: 5.71rem;
   line-height: 6.28rem;
-  text-align: center;
   letter-spacing: 0.2px;
   margin: 0 auto;
 }
 .text__description {
   font-size: 1.42rem;
   line-height: 2.14rem;
-  text-align: center;
   letter-spacing: 0.2px;
   padding: 0.71rem;
   margin: 1.92rem auto;
-  border: 1px solid white;
+}
+.text__description_b {
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, white, black);
 }
@@ -166,22 +171,56 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin-top: 5.71rem;
 }
 .menu__buttom__button {
  margin: 0 1.25rem; 
 }
 .fon {
+  position: relative;
   margin-top: 35px;
-
 }
-.fon__image {
+.fon__gradient {
+  position: absolute;
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 66.15%);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, #0E0E0E 100%);
 }
-.feutures__content {
+.Header__content {
+  height: 100%;
+}
+.Header__description, .Header__header {
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 3.71rem;
+  line-height: 4.42rem;
+  margin-bottom: 2rem;
+}
+.Header__description {
+  text-transform: none;
+  font-size: 1.42rem;
+  line-height: 2.14rem;
+  word-spacing: 5px;
+}
+.feutures__content2,.icon__name {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+}
+.name {
+  font-size: 1.42rem;
+  line-height: 2.14rem;
+  height: 100%;
+  text-align: left;
+  padding: 5px;
+}
+.icon__name {
+  padding-bottom: 10px;
+}
+.description {
+  font-size: 1.14rem;
+  line-height: 1.71rem;
+  text-align: left;
+}
+.colunm__block {
+  margin-bottom: 3rem;
 }
