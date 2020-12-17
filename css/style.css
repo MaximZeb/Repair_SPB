@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
-/*Сетка для мобил и десктоп*/
+/*Сетка и десктоп*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -85,13 +85,16 @@ h1, h2, h3, h4, h5, h6 {
 .col-m-4 {width: 66.64%;}
 .col-m-5 {width: 83.3%;}
 .col-m-6 {width: 100%;}
-/*First slide, slide feutures, Contents*/
-.container, .feutures, .Contents{
+/*First slide, slide feutures, Contents, gallery, partners*/
+.container, .feutures, .Contents, .gallery, .partners, .testimonials{
   max-width: 1000px;
   padding: 10px;
   margin: 0 auto;
   margin-top: 37px;
   height: 100%;
+}
+.feutures, .Contents, .gallery, .partners, .testimonials {
+  margin-top: 100px;
 }
 .container__content {
   display: flex;
@@ -99,9 +102,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   align-content: space-between;
   height: 100%;
-}
-.container__content > .menu {
-
 }
 .menu__content {
   display: flex;
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color:#4452FE;;
   border: none;
 }
-.menu_ImageTag, .feutures__Image, .feutures__icon, .fon__image {
+.menu_ImageTag, .feutures__Image, .feutures__icon, .fon__image, .Contents__card__image {
   max-width: 100%;
   height: 100%;
 }
@@ -223,4 +223,76 @@ h1, h2, h3, h4, h5, h6 {
 }
 .colunm__block {
   margin-bottom: 3rem;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.card > .Contents__card {
+  background-color: white;
+  height: 100%;
+  border-radius: 3%;
+  color: black;
+  margin: 1rem;
+}
+.Contents__card_p {
+  padding: 1rem;
+}
+.Contents__card__header {
+  font-size: 1.42rem;
+  line-height: 2.2rem;
+  margin: 1.5rem auto;
+}
+.Contents__card__description {
+  font-size: 1.42rem;
+  line-height: 2.2rem;
+  margin: 0 auto;
+  color: #5C5C5C;;
+  padding: 10px;
+}
+.figma__buttom {
+  margin: 4.07rem auto;
+  background-color: #4452FE;
+}
+.figma__buttom_p {
+  padding: 20px 36px;
+  color: white;
+  background-color: #4452FE;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  height: 100%;
+}
+.Contents__card__image {
+  height: 100%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+.Contents__card__image_h {
+  height: 20rem;
+}
+.galleryy__foto {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 0 auto;
+}
+.foto_m {
+  height: 285px;
+  margin: 0 auto; 
+}
+.foto_br {
+  border-radius: 10%;
+  height: 17rem;
+}
+.gallery__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foto {
+  margin:0 auto;
+}
+.galleryy__foto_m, .gallery__button_m{
+  margin-top: 2rem;
 }
