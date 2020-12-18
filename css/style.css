@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu__button:hover {
   background-color:#4452FE;;
-  border: none;
+  border: 1px solid white;
 }
 .menu_ImageTag, .feutures__Image, .feutures__icon, .fon__image, .Contents__card__image {
   max-width: 100%;
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom:none;
 }
 .menu__link:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #231F20;
 }
 .container__content > .text {
   height: 100%;
@@ -161,8 +161,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.2px;
   padding: 0.71rem;
   margin: 1.92rem auto;
-}
-.text__description_b {
+  border: 1px solid white;
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, white, black);
 }
