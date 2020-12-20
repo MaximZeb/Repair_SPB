@@ -296,4 +296,29 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
+.person__contenten {
+  padding: 10px;
+  height: 328px;
+  font-size: 1.14rem;
+  line-height: 24px;
+  border: 1px  solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.head {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.person__ava {
+  display: inline;
+}
+.person__name {
+ display: inline;
+}
+.person__decription {
+  text-align: left;
 }
