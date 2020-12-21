@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 .col-m-5 {width: 83.3%;}
 .col-m-6 {width: 100%;}
 /*First slide, slide feutures, Contents, gallery, partners*/
-.container, .feutures, .Contents, .gallery, .partners, .testimonials{
+.container, .feutures, .Contents, .gallery, .partners, .testimonials {
   max-width: 1000px;
   padding: 10px;
   margin: 0 auto;
@@ -321,4 +321,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 .person__decription {
   text-align: left;
+}
+/*footer*/
+footer {
+  background: #181818;
+}
+.footer{
+  margin: 100 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.list{
+  font-size: 1.42rem;
+  line-height: 2rem;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+}
+.list__Name {
+  margin-bottom: 40px;
+}
+.foooter__adress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+.icon__aderss {
+  margin: 10px;
 }
