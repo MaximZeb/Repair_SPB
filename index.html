@@ -23,7 +23,7 @@
 	<!-- стили -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- джаваскрипт -->
-	<script type="text/javascript" href="js/index.js" async></script>
+	<script type="text/javascript" src="js/index.js" async></script>
 </head>
 <body>
 <!-- первый слайд -->
@@ -208,8 +208,8 @@
 <!-- gallery foto block -->
 	<div class="col-12 galleryy__foto">
 		<div class="col-12 galleryy__foto">
-		<div class="col-3 foto_m"><img src="image/Rectangle_1.svg" alt="image" class="foto_br"></div>
-		<div class="col-3 foto_m"><img src="image/Rectangle_2.svg" alt="image" class="foto_br"></div>
+		<div class="col-3 foto_m"><img id="myImg" src="image/Rectangle_1.svg" alt="Dron" class="foto_br"></div>
+		<div class="col-3 foto_m"><img  id="myImg2" src="image/Rectangle_2.svg" alt="image" class="foto_br"></div>
 		<div class="col-3 foto_m"><img src="image/Rectangle_3.svg" alt="image" class="foto_br"></div>
 		<div class="col-3 foto_m"><img src="image/Rectangle_4.svg" alt="image" class="foto_br"></div>
 		</div>
@@ -368,5 +368,19 @@
 		</div>
 	</div>
 </footer>
+<!-- Modal window -->
+<div id="myModal" class="col-12 modal">
+	
+	<!-- The close button -->
+	<span class="col-1 close">&times;</span>
+	
+	<!-- Modal Content (the Image) -->
+	<img id="img01" class="col-10 modal__content">
+	
+	<!-- modal capiton -->
+	<div id="caption"></div>
+
+</div>
+
 </body>
 </html>
