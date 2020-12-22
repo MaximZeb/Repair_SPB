@@ -62,3 +62,9 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+// Get the <a> element that close the modal in area empaty
+var areaempaty = document.getElementsByClassName("popup__area")[0];
+
+areaempaty.onclick = function() {
+	modal.style.display = "none";
+}
