@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu__button:hover {
   background-color:#4452FE;;
-  border: none;
+  border: 1px solid #4452FE;
 }
 .menu_ImageTag, .feutures__Image, .feutures__icon, .fon__image, .Contents__card__image {
   max-width: 100%;
@@ -420,4 +420,7 @@ footer {
   height: 100%;
   top:0;
   left:0;
+}
+.foto__h:hover {
+  cursor: pointer;
 }
