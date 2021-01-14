@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 430px) {
   .container, .feutures, .Contents, .gallery, .partners, .testimonials {
     flex-direction: column;
+    margin-top: 0%;
   }
 }
 .container__content {
@@ -114,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   font-display: row;
 }
+
 .link {
   display: flex;
   justify-content: space-between;
@@ -123,6 +125,30 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   text-align: center;
 }
+.btn_menu__tel {
+  margin: 0;
+  cursor: pointer;
+  display:none;
+}
+@media only screen and (max-width: 430px) {
+  .link {
+    display: none;
+  }
+  .menu__content_img_tel {
+    width: 30%;
+    margin: 0;
+  }
+  .buttom {
+    margin: 0;
+    width: 33%;
+  }
+.btn_menu__tel {
+  margin: 0;
+  cursor: pointer;
+  display: block;
+}
+}
+
 .buttom {
   display: flex;
   justify-content: flex-end;
@@ -149,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu__link:hover {
   border-bottom: 1px solid white;
 }
-.container__content > .text {
+.text {
   height: 100%;
   margin: 0 auto;
   margin-top: 6.07rem;
@@ -171,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom, white, black);
 }
-.container__content > .button {
+.button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -180,6 +206,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu__buttom__button {
  margin: 0 1.25rem; 
+}
+@media only screen and (max-width: 430px) {
+  .button {
+    flex-direction: column;
+    margin-top: 3%;
+  }
+  .menu__buttom__button {
+    width: 50%;
+    margin: 3% auto;
+  }
+  .text__header {
+    font-size: 3em;
+    line-height:3rem;
+  }
+  .text__description {
+    font-size: 1.2em;
+    margin: 2% auto;
+  }
+  .text_tel {
+    margin-top: 20%;
+  }
 }
 .fon {
   position: relative;
@@ -207,6 +254,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+@media only screen and (max-width: 430px) {
+  .Header__header_t {
+    font-size: 2em;
+  }
+  .fon {
+    margin: 0;
+  }
+}
 .Header__description {
   text-transform: none;
   font-size: 1.42rem;
@@ -216,6 +271,17 @@ h1, h2, h3, h4, h5, h6 {
 .feutures__content2,.icon__name {
   display: flex;
   flex-direction: row;
+}
+@media only screen and (max-width: 430px) {
+  .feutures__content2 {
+    flex-direction: column;
+  }
+  .feutures__image {
+    width: 100%;
+  }
+  .feutures__column {
+    width: 60%;
+  }
 }
 .name {
   font-size: 1.42rem;
@@ -239,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
 }
+
 .Contents__card {
   background-color: white;
   height: 100%;
@@ -266,6 +333,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 4.07rem auto;
   background-color: #4452FE;
 }
+@media only screen and (max-width: 770px) {
+  .figma__buttom_t {
+    width: 30%;
+  }
+}
 .figma__buttom_p {
   padding: 20px 36px;
   color: white;
@@ -278,6 +350,23 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   margin: 1rem auto;
   padding: 0.5rem;
+}
+@media only screen and (max-width: 430px) {
+  .colunm__block_tel {
+    margin-top: 10%;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .Contents__card {
+    width: 90%;
+  }
+  .Contents__card__image {
+    height: 40%;
+  }
+  .figma__buttom_tel {
+    width: 80%;
+  }
 }
 .Contents__card__image_h {
   height: 20rem;
@@ -296,11 +385,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   height: 100%;
 }
-@media only screen and (max-width: 430px) {
-  .galleryy__foto, .gallery {
-    flex-direction: column;
-  }
-}
+
 .foto_m {
   height: 285px; 
 }
@@ -341,10 +426,16 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 770px)
-{
-  .person__contenten {
-
+@media only screen and (max-width: 430px) {
+  .galleryy__foto, .gallery, .card__person {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .foto_m__tel, .foto, .foto_m__tel, .person__contenten {
+    width: 100%;
+    margin-top: 5%;
   }
 }
 .head {
@@ -395,6 +486,21 @@ footer {
 }
 .f_a_c {
   text-align: center;
+}
+@media only screen and (max-width: 430px) {
+  .footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer__list,.list, .foooter__adress {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 /*modal*/
 .foto_br:hover {
